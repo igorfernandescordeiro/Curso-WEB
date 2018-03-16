@@ -1,0 +1,83 @@
+#box{
+	width: 400px;
+	height: 400px;
+	margin: 50px 50px;
+	padding: 8px;
+	background: #009670;
+	/*box-shadow: 10px 5px 20px 10px black;*/
+	box-shadow: 10px 5px 20px 10px black, -10px -5px 20px 10px red  ;
+}
+
+#box h1{
+	
+	color: white;
+	font-size: 60px;	
+	/*text-shadow: 10px 10px 5px black;*/
+	text-shadow: 10px 10px 4px rgba(0,0,0,0.2);
+
+}
+
+/*#box{
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(40deg, red, yellow) ;
+	background: radial-gradient( red, yellow, green, blue) ;
+}*/
+
+
+/**************************************************************
+Animações*/
+
+/*Criar a animação */
+
+@keyframes animacao-box{
+
+	from{
+		background: red;
+		border-radius: 0px;
+		top: 0px;
+		left: 0px;
+
+	}
+	to {
+		background: yellow;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+
+}
+
+#box-animacao{
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+	animation-name: animacao-box;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+
+	/*animation: animacao-box 5s 3s 2 alternate;*/
+	}
+
+	/***********************
+	Transições*/
+	#box-transicao{
+		width: 300px;
+		height: 300px;
+		background: orange;
+	}
+
+	#box-transicao:hover{
+		width: 400px;
+		background: black;
+		transition: background 3s, width 5s;
+		animation-direction: alternate;
+	}
+
+
+
+
+

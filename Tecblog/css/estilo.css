@@ -1,0 +1,120 @@
+/*Limpar formações padrões*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 16px;
+	font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+	background: #e0e0d1;
+}
+
+#navegacao{
+	background: #FFF;
+	border-bottom: 1px solid #d8d8d8;
+	height: 45px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+#area{
+	width: 720px;
+	margin: 0 auto;
+}
+
+#area-principal{
+	width: 720px;
+	margin: 55px auto 10px auto;
+
+}
+
+#logo{
+	float: left;
+	padding-top: 3px;
+	background: #838383;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+#menu{
+	float: right;
+	padding: 12px 0;
+}
+
+#postagem{
+	background: #FFF;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+h2{
+	color: #b9c941;
+}
+
+/***************Formatação do menu**************/
+
+a{
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+/*Links não visitados*/
+a.menu:link{
+	color: #838383;
+}
+
+/*Links visitados*/
+a.menu:visited{
+	color: #838383;
+}
+
+/*Links hover*/
+a.menu:hover{
+	color: #FFF;
+	background: #b9c941;
+	border-radius: 10px;
+}
+
+/*Links active*/
+a.menu:active{
+	color: #535353;
+}
+
+
+/*Classes*/
+.verde{
+	color: #b9c941;
+}
+
+.branco{
+	color: #FFF;
+}
+
+.data-postagem{
+
+	font-size: 12px;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+
+}
+
+.img-postagem{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.postado{
+	border-left: 4px solid #d8d8d8;
+	padding-left: 4px;
+	width: 300px;
+	margin-top: 10px;
+	display: block;
+	border-top: 1px dashed #d8d8d8;
+	font-size: 14px;
+
+}
